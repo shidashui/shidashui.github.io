@@ -4,7 +4,7 @@ node_js:
     - 10 # use nodejs v10 LTS
 cache: npm
 install:
-    - cd docs && npm i
+    - cd blog && npm i
 # 限制使用 travis 的分支
 branches:
     only:
