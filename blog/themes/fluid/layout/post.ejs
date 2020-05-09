@@ -101,3 +101,13 @@ page.banner_mask_alpha = theme.post.banner_mask_alpha
     </div>
   </div>
 <% } %>
+
+<!-- Mermaid -->
+<% if (page.mermaid && theme.post.mermaid.enable) { %>
+  <script src="<%- url_for(theme.post.mermaid.cdn) %>"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize(<%- JSON.stringify(theme.post.mermaid.options) %>);
+    }
+  </script>
+<% } %>

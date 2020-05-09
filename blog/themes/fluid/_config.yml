@@ -216,9 +216,11 @@ post:  # 部分配置同时控制自定义页面，注意备注
     specific: false  # 开启后，只有在文章 Front-matter 里指定 `math: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     engine: mathjax  # 公式引擎  available: mathjax | katex
   mermaid:  # 流程图，基于 mermaid-js，文档：http://mermaid-js.github.io/mermaid/
-    enable: false  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
+    # enable: false  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
+    enable: true  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
     specific: false  # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     options: { theme: 'default' }  # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
+    cdn: https://cdn.jsdelivr.net/npm/mermaid@7/dist/mermaid.min.js
   comments:  # 评论
     enable: false  # 开启评论
     type: disqus  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances

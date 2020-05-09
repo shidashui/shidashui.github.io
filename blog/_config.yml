@@ -94,7 +94,6 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: fluid # 指定主题
-
 language: zh-CN  # 指定语言，可不改
 
 # Deployment
@@ -103,3 +102,6 @@ deploy:
   type: git
   repo: git@github.com:shidashui/shidashui.github.io.git
   branch: master
+
+# mini
+all_minifier: true
