@@ -224,6 +224,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
   comments:  # 评论
     enable: true  # 开启评论
     type: utterances  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
+    postCheck: false # 粒度开关，不用在头部添加comments：true
 
 
 #---------------------------
