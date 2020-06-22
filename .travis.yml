@@ -21,3 +21,4 @@ deploy:
     on:
       branch: writing  # 在哪个分支运行脚本
     local-dir: blog/public  # 部署的文件夹
+    
