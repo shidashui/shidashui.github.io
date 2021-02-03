@@ -113,6 +113,12 @@ deploy:
 all_minifier: true
 
 
+#aplayer_metingjs
+aplayer:
+  enable: true
+  meting: true
+
+
 # Live2D
 ## https://github.com/EYHN/hexo-helper-live2d
 ## https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init

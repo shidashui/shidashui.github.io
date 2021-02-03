@@ -103,3 +103,11 @@ page.banner_mask_alpha = theme.post.banner_mask_alpha
     </div>
   </div>
 <% } %>
+
+<% if((!theme.post.comments.postCheck || page.comments) && theme.post.comments.enable) { %>
+                <!-- Comments -->
+                <div class="comments" id="comments">
+                  <% var type = '_partial/comments/' + theme.post.comments.type %>
+                  <%- partial(type) %>
+                </div>
+              <% } %>
